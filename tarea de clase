@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+
+ int MCD( int A, int B) { 
+ 
+ si (A < B) 
+ devolver MCD(B, A); 
+ más 
+ si (B == 0) 
+ devolución Un; 
+ más 
+ devolver MCD(B, A % B); 
+ } 
+
+int main(){
+	Int A, B;
+	printf("ingrese un valor para A");
+	scanf("%i",&A);
+	printf("ingrese un valor para B");
+	scanf("%i",&B);
+	printf("Este es el MCD de %i y %i : %i",A,B,MCD(A,B));
+}
